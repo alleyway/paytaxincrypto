@@ -6,6 +6,6 @@ source 'https://rubygems.org'
 #require 'open-uri'
 #versions = JSON.parse(open('https://pages.github.com/versions.json').read)
 
-gem 'github-pages', '124'
+gem 'github-pages', '209'
 gem 'jekyll-seo-tag'
 
