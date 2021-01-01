@@ -8,10 +8,10 @@ import Copyright from '../src/Copyright';
 
 export default function Index() {
   return (
-      <Container maxWidth="sm">
+      <Container maxWidth="md">
         <Box my={4}>
-          <Typography variant="h4" component="h1" gutterBottom>
-            Next.js example
+          <Typography variant="h3" component="h1" align="center" gutterBottom>
+            Tax Jurisdictions Accepting Cryptocurrency
           </Typography>
           <Link href="/about" color="secondary">
             Go to the about page
