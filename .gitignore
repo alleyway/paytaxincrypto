@@ -2,3 +2,4 @@ vendor
 .idea
 .bundle
 node_modules
+.next
