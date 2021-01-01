@@ -1,66 +1,34 @@
-# goldcoinbalance
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Getting Started
 
-Frontend website for <a href="https://goldcoinbalance.com">Gold Coin Balance</a>
+First, run the development server:
 
-### Devlopment environment setup
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-Install node and npm from https://nodejs.org/en/
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Install bower:
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-    npm install -g bower
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-Check out the project from version control:
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-    git clone git@github.com:alleyway/goldcoinbalance.git
-    cd goldcoinbalance
+## Learn More
 
-Install project dependencies:
+To learn more about Next.js, take a look at the following resources:
 
-    bower install
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-### Publishing changes
+## Deploy on Vercel
 
-Github pages uses jekyll on their server to build the site, so for small changes, you can generally just edit the files and do a git push
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-    git add .
-    git commit
-    git push origin
-
-### Running site locally for development
-
-Handy for instantly seeing your changes in the browser by running a server on your local computer.
-
-
-#### Install prerequisites
-
-Install Homebrew from https://brew.sh/
-
-Use Homebrew to install ruby:
-
-    brew install ruby
-
-Update rubygems:
-
-    gem update --system
-
-Install bundler:
-
-    gem install bundler
-
-    bundle install
-
-#### Start local server
-
-    bundle exec jekyll serve
-
-
-### Maintenance
-
-
-    bundle update
-
-
-##
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
