@@ -23,6 +23,13 @@ const theme = createMuiTheme({
             default: '#fff',
         },
     },
+    overrides: {
+        MuiTableCell: {
+            head: {
+                fontWeight: 700
+            }
+        }
+    }
 });
 
 export default theme;

@@ -6,7 +6,7 @@ export default function Copyright() {
     return (
         <Typography variant="body2" color="textSecondary" align="center">
             {'Copyright © '}
-                TaxInCrypto.org
+                Alleyway Apps
             {' '}
             {new Date().getFullYear()}
             {'.'}
