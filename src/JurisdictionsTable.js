@@ -70,34 +70,34 @@ function Row (props) {
                     <Collapse in={open} timeout="auto" unmountOnExit>
                         <Box margin={1}>
                             <Grid container spacing={2}>
-                                <Grid item xs={4}>
+                                <Grid item xs={12} md={4}>
                                     <Typography variant="h6" gutterBottom component="div">
                                         Overview
                                     </Typography>
-                                    <Typography variant="body1" gutterBottom component="div">
+                                    <Typography variant="body2" gutterBottom component="div">
                                         {row.expandedInfo.overview}
                                     </Typography>
                                 </Grid>
                                 {row.expandedInfo.proponents &&
-                                <Grid item xs={4}>
+                                <Grid item xs={12} md={4}>
                                     <Typography variant="h6" gutterBottom component="div">
                                         Proponent(s)
                                     </Typography>
-                                    <Typography variant="body1" gutterBottom component="div">
+                                    <Typography variant="body2" gutterBottom component="div">
                                         {row.expandedInfo.proponents.map((proponent) => {
-                                            return <Link href={proponent.link}>{proponent.name} </Link>
+                                            return <React.Fragment><Link href={proponent.link}>{proponent.name} </Link><br/></React.Fragment>
                                         })}
                                     </Typography>
                                 </Grid>
                                 }
                                 {row.expandedInfo.sources &&
-                                <Grid item xs={4}>
+                                <Grid item xs={12} md={4}>
                                     <Typography variant="h6" gutterBottom component="div">
                                         Source(s)
                                     </Typography>
-                                    <Typography variant="body1" gutterBottom component="div">
+                                    <Typography variant="body2" gutterBottom component="div">
                                         {row.expandedInfo.sources.map((proponent) => {
-                                            return <Link href={proponent.link}>{proponent.name} </Link>
+                                            return <React.Fragment><Link href={proponent.link}>{proponent.name}</Link><br/></React.Fragment>
                                         })}
                                     </Typography>
 
