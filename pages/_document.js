@@ -32,6 +32,15 @@ export default class MyDocument extends Document {
                     <meta property="og:title" content="Tax Jurisdictions Accepting Cryptocurrency" />
                     <meta property="og:description" content="A list of places where companies/individuals can pay their tax using bitcoin, ethereum, stablecoins, etc." />
                     <meta property="og:image" content="https://taxincrypto.org/images/TaxIncrptoTwitterCard.png" />
+                    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8S0D50PXNF"></script>
+                    <script dangerouslySetInnerHTML={
+                        { __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){window.dataLayer.push(arguments)}
+        gtag("js", new Date());
+        gtag("config", "G-8S0D50PXNF");
+    `}
+                    }></script>
                 </Head>
                 <body>
                 <Main/>
