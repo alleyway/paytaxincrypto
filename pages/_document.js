@@ -1,26 +1,37 @@
-import React from 'react';
-import Document, { Html, Head, Main, NextScript } from 'next/document';
-import { ServerStyleSheets } from '@material-ui/core/styles';
-import theme from '../src/theme';
+import React from "react"
+import Document, { Html, Head, Main, NextScript } from "next/document"
+import { ServerStyleSheets } from "@material-ui/core/styles"
+import theme from "../src/theme"
 
 export default class MyDocument extends Document {
-    render() {
+    render () {
         return (
             <Html lang="en">
                 <Head>
                     {/* PWA primary color */}
-                    <meta name="theme-color" content={theme.palette.primary.main} />
+                    <meta name="theme-color" content={theme.palette.primary.main}/>
+
+                    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png"/>
+                    <link rel="icon" type="image/svg+xml" href="/images/favicon/safari-pinned-tab.svg"/>
+                    <link rel="alternate icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png"/>
+                    <link rel="alternate icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png"/>
+                    <link rel="manifest" href="/images/favicon/site.webmanifest"/>
+                    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5"/>
+                    <link rel="shortcut icon" href="/images/favicon/favicon.ico"/>
+                    <meta name="msapplication-TileColor" content="#da532c"/>
+                    <meta name="msapplication-config" content="/images/favicon/browserconfig.xml"/>
                     <link
                         rel="stylesheet"
                         href="https://fonts.googleapis.com/css?family=Helvetica:300,400,500,700&display=swap"
                     />
+
                 </Head>
                 <body>
-                <Main />
-                <NextScript />
+                <Main/>
+                <NextScript/>
                 </body>
             </Html>
-        );
+        )
     }
 }
 
@@ -50,19 +61,19 @@ MyDocument.getInitialProps = async (ctx) => {
     // 4. page.render
 
     // Render app and page and get the context of the page with collected side effects.
-    const sheets = new ServerStyleSheets();
-    const originalRenderPage = ctx.renderPage;
+    const sheets = new ServerStyleSheets()
+    const originalRenderPage = ctx.renderPage
 
     ctx.renderPage = () =>
         originalRenderPage({
             enhanceApp: (App) => (props) => sheets.collect(<App {...props} />),
-        });
+        })
 
-    const initialProps = await Document.getInitialProps(ctx);
+    const initialProps = await Document.getInitialProps(ctx)
 
     return {
         ...initialProps,
         // Styles fragment is rendered after the app and page rendering finish.
         styles: [...React.Children.toArray(initialProps.styles), sheets.getStyleElement()],
-    };
-};
+    }
+}

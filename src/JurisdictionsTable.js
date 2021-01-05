@@ -21,7 +21,8 @@ const formatter = new Intl.NumberFormat()
 
 const useHeadStyles = makeStyles({
     root: {
-        fontWeight: "bold"
+        fontWeight: "bold",
+        backgroundColor: "#efefef"
     },
 })
 
@@ -84,8 +85,8 @@ function Row (props) {
                                         Proponent(s)
                                     </Typography>
                                     <Typography variant="body2" gutterBottom component="div">
-                                        {row.expandedInfo.proponents.map((proponent) => {
-                                            return <React.Fragment><Link href={proponent.link}>{proponent.name} </Link><br/></React.Fragment>
+                                        {row.expandedInfo.proponents.map((proponent, index) => {
+                                            return <React.Fragment key={index}><Link href={proponent.link}>{proponent.name} </Link><br/></React.Fragment>
                                         })}
                                     </Typography>
                                 </Grid>
@@ -96,8 +97,8 @@ function Row (props) {
                                         Source(s)
                                     </Typography>
                                     <Typography variant="body2" gutterBottom component="div">
-                                        {row.expandedInfo.sources.map((proponent) => {
-                                            return <React.Fragment><Link href={proponent.link}>{proponent.name}</Link><br/></React.Fragment>
+                                        {row.expandedInfo.sources.map((proponent, index) => {
+                                            return <React.Fragment key={index}><Link href={proponent.link}>{proponent.name}</Link><br/></React.Fragment>
                                         })}
                                     </Typography>
 
@@ -138,23 +139,23 @@ function Row (props) {
     )
 }
 
-Row.propTypes = {
-    row: PropTypes.shape({
-        calories: PropTypes.number.isRequired,
-        carbs: PropTypes.number.isRequired,
-        fat: PropTypes.number.isRequired,
-        history: PropTypes.arrayOf(
-            PropTypes.shape({
-                amount: PropTypes.number.isRequired,
-                customerId: PropTypes.string.isRequired,
-                date: PropTypes.string.isRequired,
-            }),
-        ).isRequired,
-        name: PropTypes.string.isRequired,
-        price: PropTypes.number.isRequired,
-        protein: PropTypes.number.isRequired,
-    }).isRequired,
-}
+// Row.propTypes = {
+//     row: PropTypes.shape({
+//         calories: PropTypes.number.isRequired,
+//         carbs: PropTypes.number.isRequired,
+//         fat: PropTypes.number.isRequired,
+//         history: PropTypes.arrayOf(
+//             PropTypes.shape({
+//                 amount: PropTypes.number.isRequired,
+//                 customerId: PropTypes.string.isRequired,
+//                 date: PropTypes.string.isRequired,
+//             }),
+//         ).isRequired,
+//         name: PropTypes.string.isRequired,
+//         price: PropTypes.number.isRequired,
+//         protein: PropTypes.number.isRequired,
+//     }).isRequired,
+// }
 
 const rows = [
     createData("Zug", "Switzerland", "2021-02-01", "BTC, ETH", 30000, {
