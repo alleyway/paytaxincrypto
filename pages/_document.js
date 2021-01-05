@@ -30,7 +30,7 @@ export default class MyDocument extends Document {
                     <meta name="twitter:creator" content="@mlake900" />
                     <meta property="og:url" content="https://taxincrypto.org" />
                     <meta property="og:title" content="Tax Jurisdictions Accepting Cryptocurrency" />
-                    <meta property="og:description" content="A list of places where companies/individuals can pay their tax using bitcoin, ethereum, etc." />
+                    <meta property="og:description" content="A list of places where companies/individuals can pay their tax using bitcoin, ethereum, stablecoins, etc." />
                     <meta property="og:image" content="https://taxincrypto.org/images/TaxIncrptoTwitterCard.png" />
                 </Head>
                 <body>
