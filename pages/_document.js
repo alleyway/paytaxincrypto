@@ -25,6 +25,13 @@ export default class MyDocument extends Document {
                         href="https://fonts.googleapis.com/css?family=Helvetica:300,400,500,700&display=swap"
                     />
 
+                    <meta name="twitter:card" content="summary_large_image" />
+                    <meta name="twitter:site" content="@TaxInCrypto" />
+                    <meta name="twitter:creator" content="@mlake900" />
+                    <meta property="og:url" content="https://taxincrypto.org" />
+                    <meta property="og:title" content="Tax Jurisdictions Accepting Cryptocurrency" />
+                    <meta property="og:description" content="A list of places where companies/individuals can pay their tax using bitcoin, ethereum, etc." />
+                    <meta property="og:image" content="https://taxincrypto.org/images/TaxIncrptoTwitterCard.png" />
                 </Head>
                 <body>
                 <Main/>
