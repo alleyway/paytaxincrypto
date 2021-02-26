@@ -177,6 +177,21 @@ const rows = [
             }
         ]
     }),
+    createData("City of Miami", "USA", "Undetermined", "BTC", 454279, {
+        overview: "Suarez wanted commissioners to vote to begin using Bitcoin without hesitation. But after a long discussion where commissioners raised several questions about moving into the world of cryptocurrency, they agreed by a 4-1 vote to require an analysis before the city hires a company to process transactions.",
+        proponents: [
+            {
+                name: "Francis Suarez, Mayor of Miami",
+                link: "https://www.miamigov.com/Government/City-Officials/Mayor-Francis-Suarez"
+            },
+        ],
+        sources: [
+            {
+                name: "Official Statement",
+                link: "https://twitter.com/FrancisSuarez/status/1360069847971954690"
+            }
+        ]
+    }),
 ]
 
 export default function JurisdictionsTable () {
