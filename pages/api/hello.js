@@ -11,7 +11,7 @@ export default (req, res) => {
   }).catch((e) => {
 
     res.statusCode = 500
-    res.json({ name: 'error' })
+    res.json({ name: 'error', message: e.toString() })
 
   })
 
