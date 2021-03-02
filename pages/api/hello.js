@@ -2,18 +2,19 @@
 
 export default (req, res) => {
 
-  fetch({url:'https://api.binance.com/api/v3/exchangeInfo', method: "get"}).then((response)=>{
+    fetch(new URL("/api/v3/exchangeInfo", "https://api.binance.com"), {
+        method: "get"
+    }).then(async (response) => {
 
-    const message = response.statusText
+        const message = await response.text()
 
-    res.json({ name: 'John Doe', message })
+        res.json({name: "John Doe", message})
 
-  }).catch((e) => {
+    }).catch((e) => {
 
-    res.statusCode = 500
-    res.json({ name: 'error', message: e.toString() })
+        res.statusCode = 500
+        res.json({name: "error", message: e.toString()})
 
-  })
-
+    })
 
 }
