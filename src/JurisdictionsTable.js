@@ -177,7 +177,7 @@ const rows = [
             }
         ]
     }),
-    createData("El Salvador", "", "Undetermined", "BTC", 6500000, {
+    createData("El Salvador", "", "2021-06-09", "BTC", 6500000, {
         overview: "President Nayib Bukele said he wants to ease remittances which accounts for 20% of the country's GDP.",
         proponents: [
             {
