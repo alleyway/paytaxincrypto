@@ -192,6 +192,21 @@ const rows = [
             }
         ]
     }),
+    createData("City of Jackson, TN", "USA", "Undetermined", "BTC", 66870, {
+        overview: "'Local government will lead the way in #Bitcoin adoption, and along with it, usher in a new industrial revolution with sustainable economies that will help close the wealth gap.' Tweeted the Mayor",
+        proponents: [
+            {
+                name: "Scott Conger, Mayor of Jackson",
+                link: "https://jacksontn.gov/government/departments/mayor_s_office"
+            },
+        ],
+        sources: [
+            {
+                name: "Twitter Announcement",
+                link: "https://twitter.com/MayorConger/status/1415878004702580736"
+            }
+        ]
+    }),
 ]
 
 export default function JurisdictionsTable () {
