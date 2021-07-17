@@ -177,6 +177,26 @@ const rows = [
             }
         ]
     }),
+    createData("El Salvador", "", "2021-06-09", "BTC", 6500000, {
+        overview: "President Nayib Bukele said he wants to ease remittances which accounts for 20% of the country's GDP.",
+        proponents: [
+            {
+                name: "Nayib Bukele, President of El Salvador",
+                link: "https://en.wikipedia.org/wiki/Nayib_Bukele"
+            },
+        ],
+        sources: [
+            {
+                name: "Reuters Article",
+                link: "https://twitter.com/nayibbukele/status/1401335885497524226"
+            },
+
+            {
+                name: "Twitter Statement",
+                link: "https://twitter.com/nayibbukele/status/1401335885497524226"
+            }
+        ]
+    }),
     createData("City of Miami", "USA", "Undetermined", "BTC", 454279, {
         overview: "Suarez wanted commissioners to vote to begin using Bitcoin without hesitation. But after a long discussion where commissioners raised several questions about moving into the world of cryptocurrency, they agreed by a 4-1 vote to require an analysis before the city hires a company to process transactions.",
         proponents: [
