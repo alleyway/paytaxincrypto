@@ -177,7 +177,7 @@ const rows = [
             }
         ]
     }),
-    createData("El Salvador", "", "2021-06-09", "BTC", 6500000, {
+    createData("El Salvador", "", "2021-09-07", "BTC", 6500000, {
         overview: "President Nayib Bukele said he wants to ease remittances which accounts for 20% of the country's GDP.",
         proponents: [
             {
@@ -224,6 +224,25 @@ const rows = [
             {
                 name: "Twitter Announcement",
                 link: "https://twitter.com/MayorConger/status/1415878004702580736"
+            }
+        ]
+    }),
+    createData("Panama", "", "Undetermined", "BTC,ETH", 4379039, {
+        overview: "Panama should not be left behind.\n" +
+            "\n" +
+            " Let's go from the profitable world to the futuristic pro mundi.\n" +
+            "\n" +
+            " To a more inclusive economy. A country at the forefront of innovation and technology.",
+        proponents: [
+            {
+                name: "Gabriel Silva, National Deputy",
+                link: "https://twitter.com/gabrielsilva8_7/status/1435015640226615299"
+            },
+        ],
+        sources: [
+            {
+                name: "Silva's Website",
+                link: "https://www.gabrielsilvadiputado.com/cryptoeng"
             }
         ]
     }),
