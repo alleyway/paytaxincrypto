@@ -246,6 +246,25 @@ const rows = [
             }
         ]
     }),
+    createData("Colorado", "USA", "Undetermined", "BTC & 'crypto'", 5773714, {
+        overview: "The governor of Colorado was quoted to say that he'd 'be thrilled to be the first state to let you pay your taxes in a variety of cryptos.'\n",
+        proponents: [
+            {
+                name: "Jared Polis, Governor of Colorado",
+                link: "https://twitter.com/jaredpolis"
+            },
+        ],
+        sources: [
+            {
+                name: "MSN News Article",
+                link: "https://www.msn.com/en-us/money/markets/colorado-governor-wants-to-allow-residents-to-pay-state-taxes-in-crypto"
+            },
+            {
+                name: "Bloomberg Article",
+                link: "https://www.bloomberg.com/news/articles/2022-01-29/colorado-governor-says-his-crypto-plan-withstands-market-selloff"
+            }
+        ]
+    }),
 ]
 
 export default function JurisdictionsTable () {
