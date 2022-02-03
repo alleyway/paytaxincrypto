@@ -281,10 +281,6 @@ const rows = [
             {
                 name: "O Globo: Eduardo Paes quer aplicar parte do Tesouro do Rio em criptomoeda e dar desconto para IPTU pago em bitcoin",
                 link: "https://oglobo.globo.com/economia/eduardo-paes-quer-aplicar-parte-do-tesouro-do-rio-em-criptomoeda-dar-desconto-para-iptu-pago-em-bitcoin-25353018"
-            },
-            {
-                name: "Bloomberg Article",
-                link: "https://www.bloomberg.com/news/articles/2022-01-29/colorado-governor-says-his-crypto-plan-withstands-market-selloff"
             }
         ]
     }),
