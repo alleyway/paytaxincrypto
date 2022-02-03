@@ -265,6 +265,29 @@ const rows = [
             }
         ]
     }),
+    createData("City of Rio de Janeiro", "Brazil", "Undetermined", "BTC", 6747815, {
+        overview: "Rio de Janeiro considering offering 10% discount for taxes paid in bitcoin to build a city treasury comprising of 1% in bitcoin.",
+        proponents: [
+            {
+                name: "Eduardo Paes, Mayor of Rio de Janeiro",
+                link: "https://twitter.com/eduardopaes"
+            },
+            {
+                name: "Pedro Paulo, Secretário de Fazenda e Planejamento do Rio",
+                link: "https://twitter.com/pedropaulo"
+            },
+        ],
+        sources: [
+            {
+                name: "O Globo: Eduardo Paes quer aplicar parte do Tesouro do Rio em criptomoeda e dar desconto para IPTU pago em bitcoin",
+                link: "https://oglobo.globo.com/economia/eduardo-paes-quer-aplicar-parte-do-tesouro-do-rio-em-criptomoeda-dar-desconto-para-iptu-pago-em-bitcoin-25353018"
+            },
+            {
+                name: "Bloomberg Article",
+                link: "https://www.bloomberg.com/news/articles/2022-01-29/colorado-governor-says-his-crypto-plan-withstands-market-selloff"
+            }
+        ]
+    }),
 ]
 
 export default function JurisdictionsTable () {
